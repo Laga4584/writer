@@ -1,0 +1,67 @@
+// common.scss
+
+html { overflow-y: auto }
+
+.clamp{
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+
+// 모바일
+@media screen and (max-width: 600px){
+  .logo_text {
+    font-family: 'Calligraffitti', cursive;
+    font-size: 7vmin
+  }
+  
+  .title_area {
+      font-family: 'Nanum Pen Script', sans-serif;
+      font-size: 10vmin;
+      //font-size: 7vw;
+    }
+
+  .clamp{
+    -webkit-line-clamp: 2;
+  }
+}
+// 타블렛, pc
+@media screen and (min-width: 600px){
+  .logo_text {
+    font-family: 'Calligraffitti', cursive;
+    font-size: 3vmin;
+  }
+  
+  .title_area {
+      font-family: 'Nanum Pen Script', sans-serif;
+      font-size: 5vmin;
+      //font-size: 7vw;
+    }
+  .clamp{
+    -webkit-line-clamp: 10;
+  }
+}
+
+
+.content_card{
+        
+    background: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.container {
+    width: 100%;
+  }
+
+.bg_normal {
+  background: #d8e6f3;
+}
+
+div{
+  margin:0;
+}
+.row {
+    //color: $color-main; // 변수 사용
+}
